@@ -1,2 +1,2 @@
-# ChatBotStock
-Chatbot para obter as cotações do pregrao da BMVF
+# ChatBotTempo
+Chatbot para pesquisar previsão de tempo das cidades do brasil utilizando API do Yahoo

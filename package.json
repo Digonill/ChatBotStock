@@ -1,16 +1,28 @@
 {
-  "name": "hatbottempo",
+  "name": "chatbottempo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chatbot para pesquisar previsão de tempo das cidades do brasil utilizando API do Yahoo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rodrigo Oliveira",
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.27.1",
-    "YQL":"1.0.2"
-  }
+    "yql": "1.0.2"
+  },
+  "engines": {
+    "node": "v6.10.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digonill/ChatBotTempo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Digonill/ChatBotTempo/issues"
+  },
+  "homepage": "https://github.com/Digonill/ChatBotTempo#readme"
 }

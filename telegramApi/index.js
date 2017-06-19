@@ -59,11 +59,14 @@ module.exports.enviarMensagem = (msg) => {
 
 module.exports.iniciarChat = ( ck ) => {
     // inicia o bot
-    bot = new telegramBot(TOKEN(), { polling: true } );
-
+    if (bot == null){
+        bot = new telegramBot(TOKEN());
+        bot.setWebHook();
+    }
+    
     callback = ck; // callback para receber as mensagens
 
     //recebe mensagem do chat
     //bot.onText(/\/(start|tempo)(.*)/, receberMensagemBot );  
-    bot.onText(/\/(start|tempo)/, receberMensagemBot );      
+    bot.onText(/\/(start|tempo)/, receberMensagemBot );
 }
